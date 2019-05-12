@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+
+    defaultConfig {
+        applicationId "com.lenovolap.loginrag"
+        minSdkVersion 20
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+android {
+    lintOptions {
+        abortOnError false
+    }
+}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation files('src/main/java/com/lenovolap/loginrag/libs/additionnal.jar')
+    implementation files('src/main/java/com/lenovolap/loginrag/libs/activation.jar')
+    implementation files('src/main/java/com/lenovolap/loginrag/libs/mail.jar')
+    //compile 'com.journeyapps:zxing-android-integration:2.3.0@aar'
+    implementation 'com.android.support:appcompat-v7:27.0.2'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:design:27.+'
+   // compile 'com.google.firebase:firebase-auth:9.2.0'
+    implementation 'com.google.android.gms:play-services-vision:9.2.0'
+    implementation 'com.google.zxing:core:2.3.0'
+    implementation 'me.dm7.barcodescanner:zxing:1.8.1'
+    implementation 'com.journeyapps:zxing-android-legacy:2.3.0@aar'
+    implementation 'com.journeyapps:zxing-android-embedded:3.2.0@aar'
+
+}
+
+
+
+
+
