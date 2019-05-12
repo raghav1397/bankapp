@@ -1,4 +1,4 @@
-# bankapp
+# Android Mobile Money Transaction
 
 Android Mobile Money Transaction using OTP and also the user can view these account details using barcode assigned to the user.
 Two applications are needed:
